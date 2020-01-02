@@ -71,7 +71,8 @@ int menu(){
 
         printf("ESCOLHA UMA DAS OPCOES ABAIXO\n");
         printf("1 - CADASTRAR\n2 - ALTERAR\n3 - EXCLUIR\n4 - LISTAR CONTATOS\n5 - PESQUISAR CONTATOS\n6 - SAIR E SALVAR\n");
-        scanf(" %s",op);
+        //Ler a opcao digitada e converte para um int, caso o usuario digite um carectere a funcao atoi retorna zero
+		scanf(" %s",op);
         opcao = atoi(op);
 
         //Verifica se o usuario digitou uma opcao valida
